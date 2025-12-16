@@ -1,5 +1,7 @@
 # EventBus - Event-Driven Chat Service
 
+-- this documentation was made with AI help --
+
 Minimal event-driven chat service demonstrating pub/sub architecture with a mock AI assistant.
 
 ## Architecture
