@@ -1,7 +1,16 @@
+# taken from https://www.youtube.com/watch?v=lCiW3BaOP04
 from src.types import MessageModel
 
-def ia_response(input_text: str) -> MessageModel:
-    user_message = input_text.lower()
+def ia_response(input_text: MessageModel) -> MessageModel:
+    """Mock IA responses
+
+    Args:
+        input_text (MessageModel): input user message when post
+
+    Returns:
+        MessageModel: AI response message
+    """
+    user_message = input_text.content.lower()
 
     if "hello" in user_message:
         return MessageModel(role="assistant", content="Hello! How can I assist you today?")
